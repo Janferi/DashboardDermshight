@@ -72,7 +72,7 @@ if page == "Overview":
 elif page == "Class Distribution":
     st.title("📊 Class Distribution")
     st.caption("Distribusi jumlah gambar per kelas pada split Train dan Test.")
-    show_chart("eda_01_class_distribution.png")
+    show_chart("eda_01_class_distribution.jpeg")
     insight_box(
         "Distribusi kelas pada train dan test konsisten — menandakan pembagian split dilakukan "
         "secara proporsional (stratified). Unknown_Normal menjadi kelas dominan (1.651 train), "
@@ -84,7 +84,7 @@ elif page == "Class Distribution":
 elif page == "Imbalance Ratio":
     st.title("⚖️ Class Imbalance Ratio")
     st.caption("Rasio ketimpangan jumlah data antar kelas relatif terhadap kelas terbesar.")
-    show_chart("eda_02_imbalance_ratio.png")
+    show_chart("eda_02_imbalance_ratio.jpeg")
     insight_box(
         "4 kelas masuk kategori severe imbalance (>5×): Candidiasis, Rosacea, Lupus, dan "
         "Sun_Sunlight_Damage. 15 kelas mild (2–5×), dan hanya 3 kelas balanced (≤2×). "
@@ -95,7 +95,7 @@ elif page == "Imbalance Ratio":
 elif page == "Image Dimensions":
     st.title("🖼️ Image Dimension Analysis")
     st.caption("Analisis dimensi dan aspect ratio gambar pada Train split.")
-    show_chart("eda_03_dimensions.png")
+    show_chart("eda_03_dimensions.jpeg")
     insight_box(
         "Dimensi gambar sangat bervariasi, dari ratusan hingga >2000px. Aspect ratio dominan "
         "adalah 1.5× (landscape), bukan square. Resize ke 224×224 dengan padding (letterbox) "
@@ -106,7 +106,7 @@ elif page == "Image Dimensions":
 elif page == "Color Mode":
     st.title("🎨 Color Mode Distribution")
     st.caption("Distribusi mode warna gambar pada Train split.")
-    show_chart("eda_04_color_mode.png")
+    show_chart("eda_04_color_mode.jpeg")
     insight_box(
         "Seluruh 1.100 sampel gambar training memiliki color mode RGB. Tidak diperlukan "
         "konversi mode warna dalam pipeline preprocessing, sehingga mengurangi beban "
@@ -117,7 +117,7 @@ elif page == "Color Mode":
 elif page == "RGB Analysis":
     st.title("🌈 Mean RGB Channel Intensity")
     st.caption("Rata-rata intensitas channel R, G, B per kelas pada Train split.")
-    show_chart("eda_06_rgb_channels.png")
+    show_chart("eda_06_rgb_channels.jpeg")
     insight_box(
         "Seluruh kelas didominasi channel Red — wajar untuk gambar kulit manusia. "
         "Psoriasis memiliki intensitas paling rendah (~83B), mengindikasikan gambar lebih gelap. "
@@ -129,7 +129,7 @@ elif page == "RGB Analysis":
 elif page == "Split Ratio":
     st.title("📐 Train / Test Split Ratio")
     st.caption("Proporsi train dan test per kelas dalam persentase.")
-    show_chart("eda_07_split_ratio.png")
+    show_chart("eda_07_split_ratio.jpeg")
     insight_box(
         "Rasio train/test seluruh kelas sangat konsisten di sekitar 90:10. "
         "Pembagian split dilakukan secara stratified dan merata, memastikan evaluasi "
