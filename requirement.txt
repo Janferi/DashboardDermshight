@@ -1,0 +1,1 @@
+streamlit>=1.32.0 dan Pillow>=10.0.0
