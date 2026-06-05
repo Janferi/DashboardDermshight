@@ -10,9 +10,7 @@ st.set_page_config(
 )
 
 ASSETS = Path("Dermsight-eda/assets")
-st.write("Working dir:", Path.cwd())
-st.write("Assets exists:", ASSETS.exists())
-st.write("Files:", list(ASSETS.iterdir()) if ASSETS.exists() else "folder tidak ada")
+
 
 # ─── Sidebar ──────────────────────────────────────────────────
 st.sidebar.title("🔬 DermSight")
