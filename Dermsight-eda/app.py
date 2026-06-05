@@ -9,7 +9,7 @@ st.set_page_config(
     layout="wide",
 )
 
-ASSETS = Path("assets")
+ASSETS = Path("Dermsight-eda/assets")
 st.write("Working dir:", Path.cwd())
 st.write("Assets exists:", ASSETS.exists())
 st.write("Files:", list(ASSETS.iterdir()) if ASSETS.exists() else "folder tidak ada")
